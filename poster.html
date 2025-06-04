@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Poster PPDB SMK Bina Informatika</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0f8ff, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .poster {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 850px;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .poster h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #222;
+      line-height: 1.4;
+    }
+
+    .poster .highlight {
+      font-weight: bold;
+      color: #0d47a1;
+      font-size: 1.8rem;
+    }
+
+    .strike {
+      color: #d32f2f;
+      text-decoration: line-through;
+      font-size: 1.3rem;
+      font-weight: 700;
+      display: inline-block;
+      animation: shake 1.2s infinite ease-in-out;
+    }
+
+    .free {
+      font-size: 1.6rem;
+      font-weight: bold;
+      background-color: #1976d2;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-top: 10px;
+      animation: fadeUp 1s ease;
+    }
+
+    .girl-img {
+      max-width: 300px;
+      width: 100%;
+      margin-top: 15px;
+      animation: shakes .4s infinite ease-in-out;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #444;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .majors-section {
+      margin-top: 30px;
+    }
+
+    .majors-section h3 {
+      color: #0d47a1;
+    }
+
+    .major-btn {
+      background-color: #1976d2;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .major-btn:hover {
+      background-color: #1565c0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      75% { transform: rotate(-2deg); }
+    }
+    
+        @keyframes shakes {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      75% { transform: rotate(-2deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @media (max-width: 600px) {
+      .poster h2 {
+        font-size: 1.2rem;
+      }
+
+      .highlight {
+        font-size: 1.4rem;
+      }
+
+      .girl-img {
+        max-width: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="poster">
+    <h2>
+      CUKUP BAYAR <span class="highlight">Rp. 400.000</span><br/>
+      KAMU UDAH BISA SEKOLAH
+    </h2>
+
+    <p class="description">AYO GABUNG BERSAMA KAMI!</p>
+    <div class="free">FREE DSP</div>
+
+    <div style="margin-top: 15px;">
+      <span style="font-weight: bold; color: #555;">CUMA BAYAR</span><br/>
+      <span class="strike">Rp. 3.800.000</span><br/>
+      <span style="font-size: 0.95rem; color: #000;">TAPI CUKUP BAYAR Formulir Pendaftaran + SPP Juli</span>
+    </div>
+
+    <img src="45.jpg" alt="Siswa SMK" class="girl-img" />
+
+    <div class="footer">
+      <span>📷 @smkbinainformatika</span>
+      <span>🎵 @smkbinainformatika</span>
+    </div>
+
+    <!-- Jurusan -->
+    <div class="majors-section">
+      <h3>Pilih Jurusan</h3>
+      <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+        <a href="rpl.html" class="major-btn">RPL</a>
+        <a href="tkj.html" class="major-btn">TKJ</a>
+        <a href="mm.html" class="major-btn">MM</a>
+        <a href="otkp.html" class="major-btn">OTKP</a>
+        <a href="pkm.html" class="major-btn">PKM</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
